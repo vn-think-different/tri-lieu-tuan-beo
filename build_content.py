@@ -100,3 +100,7 @@ Trang chính → tổng quan phương pháp → bằng chứng và giới hạn 
 6. Xây backend đặt lịch và thương mại điện tử sau khi có quy trình vận hành, kênh nhận đơn và yêu cầu dữ liệu cá nhân.
 ''')
 print('Created',len(list(root.rglob('*'))),'paths')
+
+# Apply the verified Google Maps and KML experience after generating base pages.
+import runpy
+runpy.run_path(str(root/'refresh_site.py'))
