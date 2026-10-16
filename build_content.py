@@ -104,3 +104,5 @@ print('Created',len(list(root.rglob('*'))),'paths')
 # Apply the verified Google Maps and KML experience after generating base pages.
 import runpy
 runpy.run_path(str(root/'refresh_site.py'))
+
+runpy.run_path(str(root/'apply_brand.py'))
